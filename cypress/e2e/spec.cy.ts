@@ -2,4 +2,4 @@ describe('template spec', () => {
   it('passes', () => {
     cy.visit('https://example.cypress.io')
   })
-})   // comment for autorun github actions testing
+})   // comment for autorun github actions testing вававававава
