@@ -1,0 +1,17 @@
+name: Run Cypress E2E tests
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  cypress-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Cypress tests inside GHCR Docker container
+        run: |
+          docker run --rm -v ${{ github.workspace }}:/e2e ghcr.io/umkas/silpo-cypress-img:latest npx cypress run
