@@ -1,5 +1,5 @@
-// describe('template spec', () => {
-//   it('passes', () => {
-//     cy.visit('https://example.cypress.io')
-//   })
-// })   // comment for autorun github actions testing вававававава 222222 3333
+describe('Smoke тест (перевірка енвайрменту)', () => {
+  it('фреймворк працює', () => {
+    expect(true).to.equal(true)
+  })
+})
