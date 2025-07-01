@@ -3,6 +3,7 @@
     "target": "ES6",
     "module": "commonjs",
     "types": ["cypress"],
+    "lib": ["es2020", "dom"],
     "baseUrl": "./",
     "strict": true,
     "esModuleInterop": true,
