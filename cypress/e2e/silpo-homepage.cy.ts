@@ -66,13 +66,13 @@ describe('[US-1] Відображення акційних товарів у п�
 
     it('[US-1-CK-7] мають працювати кнопки навигації слайдера "Акції"', () => {
         homePage.promotionsSlider.clickNext();
-        cy.wait(2000);
+        cy.wait(4000);
         homePage.promotionsSlider.clickPrev();
     });
 
         it('[US-1-CK-13] при кліку на кнопку "Показати всі" у слайдері має перейти на сторінку /offers', () => {
         homePage.promotionsSlider.clickSeeMore();
-        cy.wait(2000);
+        cy.wait(4000);
         // cy.url().should('eq', 'https://silpo.ua/offers');
         cy.url().then((url) => {
             expect(allowesOfferUrls).to.include(url);

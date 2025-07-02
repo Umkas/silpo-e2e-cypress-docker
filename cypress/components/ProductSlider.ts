@@ -1,7 +1,6 @@
 const sliderLocators = {
     title: 'h2.products-carousel__title',
-    teaser: '.products-carousel__item',
-    carousel: '[aria-label="Карусель товарів"]',
+    teaser: '[aria-label="Карусель товарів"]',
     prevButton: '[aria-label="Прокрутіть ліворуч"]',
     nextButton: '[aria-label="Прокрутити праворуч"]',
     seeMoreButton: '[aria-label="Показати всі продукти"]'
@@ -15,7 +14,7 @@ export class ProductSlider {
     }
 
     getContainer() {
-        return this.getTitleEl().parents(sliderLocators.carousel);
+        return this.getTitleEl().parents('.products-carousel');
     }
 
     getSeeMoreButton() {
